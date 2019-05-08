@@ -16,7 +16,12 @@ fun main() {
                 " xmlns:atom=\"http://www.w3.org/2005/Atom\">" +
                 "\n<Document>" +
                 "\n<name>path.kml</name>" +
-                "\n<open>1</open>"
+                "\n<open>1</open>\n<Style id=\"style\">\n" +
+                "<PolyStyle>\n" +
+                "<color>ff0000cc</color>\n" +
+                "<colorMode>normal</colorMode>\n" +
+                "</PolyStyle>\n" +
+                "</Style>"
     )
 
     line2 = bufferedReader.readLine().split(",")
@@ -27,6 +32,7 @@ fun main() {
 
         printWriter.print(
             "<Placemark>\n<name>$i</name>" +
+                    "\n<styleUrl>#style</styleUrl>" +
                     "\n<LineString>\n<extrude>1</extrude>" +
                     "\n<altitudeMode>relativeToSeaFloor</altitudeMode>" +
                     "\n<coordinates>" +
