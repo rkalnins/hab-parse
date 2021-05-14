@@ -3,3 +3,5 @@ Parse data from PITS RTTY telemetry packets, create excel workbook, and KML file
 
 * Reads data from telemetry file into `.xlsx` workbook.
 * Generates KML file from telemetry data
+
+Used for 2019 Kalamazoo Astronomical Research Balloon launch.
